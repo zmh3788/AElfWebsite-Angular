@@ -23,7 +23,7 @@ const PERFECT_SCOROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'aelf'}),
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
